@@ -115,6 +115,8 @@ a.cancel-btn{
 @media screen and (min-width: 768px) {
   body{
     font-size: 18px;
+    min-height: 100vh;
+    padding: 20px;
   }
   #card{
     width: 500px;
@@ -132,8 +134,10 @@ a.cancel-btn{
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
   }
   #card{
+    position: absolute;
     width: 550px;
     margin: 0 auto;
   }
@@ -146,8 +150,10 @@ a.cancel-btn{
   body{
     font-size: 23px;
     min-height: 100vh;
+    position: relative;
   }
   #card{
+    position: absolute;
     width: 600px;
     margin: 0 auto;
   }
@@ -160,8 +166,10 @@ a.cancel-btn{
   body{
     font-size: 25px;
     min-height: 100vh;
+    position: relative;
   }
   #card{
+    position: absolute;
     width: 600px;
     margin: 0 auto;
   }
