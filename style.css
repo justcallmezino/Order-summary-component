@@ -143,20 +143,11 @@ a.cancel-btn{
 @media screen and (min-width: 1200px) {
   body{
     font-size: 23px;
+    min-height: 100vh;
   }
   #card{
     width: 600px;
     margin: 0 auto;
-  }
-  .grid a:hover{
-    color: var(--Desaturated-blue);
-  }
-  a.proceed-btn:hover{
-    background-color: var(--Desaturated-blue);
-  }
-  a.cancel-btn:hover{
-    color: var(--Dark-blue);
-    opacity: 1;
   }
   a.proceed-btn, a.cancel-btn{
     font-weight: 700;
@@ -166,6 +157,7 @@ a.cancel-btn{
 @media screen and (min-width: 1440px) {
   body{
     font-size: 25px;
+    min-height: 100vh;
   }
   #card{
     width: 600px;
