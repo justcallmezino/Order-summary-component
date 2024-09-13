@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+  </head>
+  <body>
+    <div id="card">
+      <div class="top-card">
+         <img src="images/illustration-hero.svg" alt="illustration-hero">
+      </div>
+      <div class="bottom-card">
+        <h2 class="title">Order Summary</h2>
+        <p class="subtitle">You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+        <div class="plan-box grid">
+          <img src="images/icon-music.svg" alt="icon-music">
+          <div class="plan">
+            <h4 class="name">Annual Plan</h4>
+            <p class="price">$59.99/year</p>
+          </div>
+          <a href="#" onclick="alertUser()">Change</a>
+        </div>
+        <a href="#" class="proceed-btn" onclick="alertUser()">Proceed to Payment</a>
+        <a href="#" class="cancel-btn" onclick="alertUser()">Cancel Order</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
