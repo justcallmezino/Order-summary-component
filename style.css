@@ -21,7 +21,8 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--Pale-blue);
-  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px
   position: relative;
 }
 
