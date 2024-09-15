@@ -32,7 +32,7 @@ body{
 }
   
 #card{
-  width: 425px;
+  width: 400px;
   background-color: var(--White);
   border-radius: 20px;
   overflow: hidden;
