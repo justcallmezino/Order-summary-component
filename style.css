@@ -18,21 +18,20 @@
 }
 
 body{
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Red Hat Display", sans-serif;
-  font-weight: 900;
   font-size: 16px;
   min-height: 100vh;
   background: url(images/pattern-background-mobile.svg) var(--Pale-blue);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
   
 #card{
-  width: 425px;
+  max-width: 375px;
   background-color: var(--White);
   border-radius: 20px;
   overflow: hidden;
@@ -42,6 +41,7 @@ body{
 
 .top-card img{
   width: 100%;
+  display: block;
 }
 
 .bottom-card{
@@ -51,12 +51,12 @@ body{
 }
 
 .title{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .subtitle{
-  line-height: 1.5em;
-  margin-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
   opacity: 0.5;
 }
 
@@ -64,11 +64,11 @@ body{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   background-color: var(--Very-pale-blue);
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   border-radius: 20px;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .grid .plan{
@@ -93,9 +93,10 @@ a.proceed-btn{
   display: block;
   background-color: var(--Bright-blue);
   color: var(--White);
-  padding: 20px 0;
-  margin: 30px 0;
-  border-radius: 15px;
+  padding: 10px 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 a.proceed-btn:hover{
@@ -112,67 +113,16 @@ a.cancel-btn:hover{
 }
 
 a.proceed-btn, a.cancel-btn{
-  font-size: 18px;
-  font-weight: 700;
   text-decoration: none;
 }
 
-@media screen and (min-width: 576px) {
-  #card{
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 376px) {
   body{
-    font-size: 20px;
-  }
-  #card{
-    width: 600px;
-    margin: 0 auto;
-  }
-  a.proceed-btn, a.cancel-btn{
-    font-size: 20px;
-    font-weight: 700;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  body{
-    background-image: url(images/pattern-background-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    place-content: center;
-  }
-  #card{
-    width: 600px;
-    margin: 0 auto;
-  }
-  a.proceed-btn, a.cancel-btn{
-    font-weight: 700;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body{
-    font-size: 18px;
-    font-weight: 700;
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   #card{
-    width: 450px;
     margin: 0 auto;
-  }
-  .bottom-card{
-    padding: 5% 10%;
-  }
-  a.proceed-btn, a.cancel-btn{
-    font-weight: 700;
-    font-size: 18px;
   }
 }
