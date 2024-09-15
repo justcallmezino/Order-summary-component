@@ -32,7 +32,7 @@ body{
 }
   
 #card{
-  width: 380px;
+  width: 395px;
   background-color: var(--White);
   border-radius: 20px;
   overflow: hidden;
@@ -55,6 +55,7 @@ body{
 }
 
 .subtitle{
+  font-weight: 700;
   line-height: 1.5em;
   margin-bottom: 20px;
   opacity: 0.5;
