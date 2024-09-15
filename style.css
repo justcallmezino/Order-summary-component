@@ -1,6 +1,7 @@
 :root{
   --Pale-blue: hsl(225, 100%, 94%);
   --Bright-blue: hsl(245, 75%, 52%);
+  --White: #fff;
   --Very-pale-blue: hsl(225, 100%, 98%);
   --Desaturated-blue: hsl(224, 23%, 55%);
   --Dark-blue: hsl(223, 47%, 23%);
@@ -12,32 +13,39 @@
   padding: 0;
 }
 
+*, *::before *::after{
+  box-sizing: inherit;
+}
+
 body{
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
   font-size: 16px;
   min-height: 100vh;
-  background-image: url(images/pattern-background-mobile.svg);
+  background: url(images/pattern-background-mobile.svg) var(--Pale-blue);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: var(--Pale-blue);
-  position: relative;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+  
 #card{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
+  width: 425px;
+  background-color: var(--White);
   border-radius: 20px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
 }
 
+.top-card img{
+  width: 100%;
+}
+
 .bottom-card{
-  padding: 9%;
+  padding: 10%;
   color: var(--Dark-blue);
   text-align: center;
 }
@@ -45,9 +53,11 @@ body{
 .title{
   margin-bottom: 20px;
 }
+
 .subtitle{
+  line-height: 1.5em;
   margin-bottom: 20px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .grid{
@@ -66,73 +76,76 @@ body{
 }
 
 .grid a{
-  color: var(--Bright-blue);
   grid-column: 7/9;
+  color: var(--Bright-blue);
+}
+
+.grid a:hover{
+  color: var(--Desaturated-blue);
 }
 
 .price{
+  font-family: 700;
   opacity: 0.6;
-}
-
-a.proceed-btn, a.cancel-btn{
-  font-weight: 700;
-  text-decoration: none;
 }
 
 a.proceed-btn{
   display: block;
   background-color: var(--Bright-blue);
-  color: #ffff;
+  color: var(--White);
   padding: 20px 0;
   margin: 30px 0;
   border-radius: 15px;
 }
 
+a.proceed-btn:hover{
+  background-color: var(--Desaturated-blue);
+}
+
 a.cancel-btn{
   color: var(--Dark-blue);
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+a.cancel-btn:hover{
+  opacity: 1;
+}
+
+a.proceed-btn, a.cancel-btn{
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 576px) {
-  body{
-    font-size: 17px;
-  }
   #card{
-    width: 470px;
     margin: 0 auto;
-  }
-  
-  .top-card img{
-    width: 100%;
-  }
-  a.proceed-btn, a.cancel-btn{
-    font-weight: 700;
   }
 }
 
 @media screen and (min-width: 768px) {
   body{
-    font-size: 18px;
+    font-size: 20px;
   }
   #card{
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
   }
   a.proceed-btn, a.cancel-btn{
+    font-size: 20px;
     font-weight: 700;
   }
 }
 
 @media screen and (min-width: 992px) {
   body{
-    font-size: 20px;
-    min-height: 100vh;
-    background-image: url(images/pattern-background-desktop.svg);
+    background-image: url(images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    place-content: center;
   }
   #card{
-    width: 550px;
+    width: 600px;
     margin: 0 auto;
   }
   a.proceed-btn, a.cancel-btn{
@@ -142,25 +155,24 @@ a.cancel-btn{
 
 @media screen and (min-width: 1200px) {
   body{
-    font-size: 23px;
-    min-height: 100vh;
+    font-size: 18px;
+    font-weight: 700;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #card{
-    width: 600px;
+    width: 450px;
     margin: 0 auto;
+  }
+  .bottom-card{
+    padding: 5% 10%;
   }
   a.proceed-btn, a.cancel-btn{
     font-weight: 700;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  body{
-    font-size: 25px;
-    min-height: 100vh;
-  }
-  #card{
-    width: 600px;
-    margin: 0 auto;
+    font-size: 18px;
   }
 }
