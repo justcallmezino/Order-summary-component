@@ -45,6 +45,6 @@ Challenge myself every now and again to improve my skills.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Zino's Github](https://justcallmezino.github.io/home/)
 - Frontend Mentor - [@justcallmezino](https://www.frontendmentor.io/profile/@justcallmezino)
 - Twitter - [@justcallmezino](https://www.twitter.com/@justcallmezino)
